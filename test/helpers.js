@@ -18,3 +18,9 @@ const src = babelResult.code
 jsdom({
   html, src
 });
+
+import('chai').then(chai => {
+  // Use chai here
+}).catch(error => {
+  console.error(error);
+});
